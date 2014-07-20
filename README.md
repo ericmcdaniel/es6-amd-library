@@ -6,6 +6,8 @@
 <img src="http://verekia.com/wp-content/uploads/2011/11/require-js.png">
 <img src="http://bower.io/img/bower-logo.png" height="138">
 
+_This project was forked/adapted from the wonderful [requirejs-library](https://github.com/sahat/requirejs-library) created by [Sahat Yalkabov](https://github.com/sahat)._
+
 ### Getting Started
 The project depends on [Bower](https://github.com/bower/bower) and [Gulp.js](http://gulpjs.com). Assuming
 you already have **Node.js** installed on your system, run the following command:
@@ -17,7 +19,7 @@ sudo npm install -g gulp bower
 Next, clone the repository and install project dependencies:
 ```bash
 # Fetch only the latest commits.
-git clone --depth=1 git@github.com:sahat/requirejs-library.git
+git clone --depth=1 git@github.com:ericmcdaniel/es6-amd-library.git
 
 cd requirejs-library
 
@@ -40,6 +42,8 @@ And with **npm** you get the following packages:
 
 
 ### Usage
+
+Write your JS in ES6 in the /src/ folder.
 
 This library is flexible enough to work as an inline **\<script\>** declaration,
 **Require.js** module, or in this case as a **Node.js** module:
@@ -116,6 +120,7 @@ get to it as soon as I can.
 The MIT License (MIT)
 
 Copyright (c) 2014 Sahat Yalkabov
+
 Copyright (c) 2014 Eric McDaniel
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of

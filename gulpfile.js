@@ -36,7 +36,7 @@ gulp.task('requirejs', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('src/**/*.js', ['requirejs']);
+  gulp.watch('src/**/*.js', ['amd', 'requirejs']);
 });
 
 gulp.task('default', ['amd', 'requirejs']);
