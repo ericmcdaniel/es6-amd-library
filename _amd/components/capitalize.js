@@ -1,10 +1,13 @@
-define(function() {
-
+define([], function() {
+  "use strict";
   function capitalize(str) {
     str = str == null ? '' : String(str);
     return str.charAt(0).toUpperCase() + str.slice(1);
   }
-
-  return capitalize;
-
+  return {
+    get capitalize() {
+      return capitalize;
+    },
+    __esModule: true
+  };
 });

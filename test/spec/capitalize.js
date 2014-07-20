@@ -1,4 +1,6 @@
-define(['capitalize'], function(capitalize) {
+define(['components/capitalize'], function(module) {
+
+  var capitalize = module.capitalize;
 
   describe('Capitalize', function() {
     it('should have first letter as upper case', function() {

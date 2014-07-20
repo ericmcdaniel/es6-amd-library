@@ -1,4 +1,6 @@
-define(['slugify'], function(slugify) {
+define(['components/slugify'], function(module) {
+
+  var slugify = module.slugify;
 
   describe('Slugify', function() {
     it('should slugify an english sentence', function() {

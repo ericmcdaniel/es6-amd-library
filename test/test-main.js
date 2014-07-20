@@ -6,7 +6,7 @@ for (var file in window.__karma__.files) {
 }
 
 requirejs.config({
-  baseUrl: '/base/src',
+  baseUrl: '/base/_amd',
   paths: {
     spec: '../test/spec'
   },

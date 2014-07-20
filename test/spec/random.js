@@ -1,4 +1,6 @@
-define(['random'], function(random) {
+define(['components/random'], function(module) {
+
+  var random = module.random;
 
   describe('Random Utility', function() {
     var min = Math.pow(2, 31);

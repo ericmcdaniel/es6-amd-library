@@ -1,27 +1,23 @@
-define([
-  'camelize',
-  'capitalize',
-  'dasherize',
-  'random',
-  'slugify',
-  'trim'
-], function(camelize, capitalize, dasherize, random, slugify, trim) {
+/* jshint esnext: true */
+import {camelize} from './components/camelize';
+import {capitalize} from './components/capitalize';
+import {dasherize} from './components/dasherize';
+import {random} from './components/random';
+import {slugify} from './components/slugify';
+import {trim} from './components/trim';
 
-  // Object Contructor
-  var mylib = function(obj) {
-    return obj;
-  };
+// Object Contructor
+var mylib = {};
 
-  // Properties
-  mylib.VERSION = '1.0.0';
+// Properties
+mylib.VERSION = '1.0.0';
 
-  // Methods
-  mylib.camelize = camelize;
-  mylib.capitalize = capitalize;
-  mylib.dasherize = dasherize;
-  mylib.random = random;
-  mylib.slugify = slugify;
-  mylib.trim = trim;
+// Methods
+mylib.camelize = camelize;
+mylib.capitalize = capitalize;
+mylib.dasherize = dasherize;
+mylib.random = random;
+mylib.slugify = slugify;
+mylib.trim = trim;
 
-  return mylib;
-});
+export var mylib;

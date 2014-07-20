@@ -1,5 +1,5 @@
-define(function() {
-
+define([], function() {
+  "use strict";
   function random(min, max) {
     if (max == null) {
       max = min;
@@ -7,7 +7,10 @@ define(function() {
     }
     return min + Math.floor(Math.random() * (max - min + 1));
   }
-
-  return random;
-
+  return {
+    get random() {
+      return random;
+    },
+    __esModule: true
+  };
 });
