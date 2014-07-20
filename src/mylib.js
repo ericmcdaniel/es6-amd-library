@@ -6,7 +6,7 @@ import {random} from './components/random';
 import {slugify} from './components/slugify';
 import {trim} from './components/trim';
 
-// Object Contructor
+// Library Container
 var mylib = {};
 
 // Properties
