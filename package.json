@@ -1,5 +1,5 @@
 {
-  "name": "requirejs-library",
+  "name": "es6-amd-library",
   "version": "1.0.0",
   "scripts": {
     "test": "karma start --single-run --browsers PhantomJS"

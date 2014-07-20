@@ -1,5 +1,5 @@
 {
-  "name": "requirejs-library",
+  "name": "es6-amd-library",
   "version": "1.0.0",
   "devDependencies": {
     "requirejs": "~2.1.10",

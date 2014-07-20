@@ -1,6 +1,7 @@
-# Require.js Library Skeleton
+# ES6/AMD Library Skeleton
 [![Build Status](https://travis-ci.org/sahat/requirejs-library.svg?branch=master)](https://travis-ci.org/sahat/requirejs-library) [![devDependency Status](https://david-dm.org/sahat/requirejs-library/dev-status.svg?theme=shields.io)](https://david-dm.org/sahat/requirejs-library#info=devDependencies)
 
+<img src="https://camo.githubusercontent.com/7e41f7b08503cb40c113d35bbc6cb305abf0d086/68747470733a2f2f676f6f676c652e6769746875622e636f6d2f747261636575722d636f6d70696c65722f6c6f676f2f74632e737667" height="138">
 <img src="http://cache.preserve.io/9qwernji/assets/c6d7109e182d0d88cc312951d3e1d2f8.png" height="138">
 <img src="http://verekia.com/wp-content/uploads/2011/11/require-js.png">
 <img src="http://bower.io/img/bower-logo.png" height="138">
@@ -32,6 +33,7 @@ With [Bower](https://github.com/bower/bower) you get the following libraries:
 - **Chai** - BDD/TDD assertion library (used with Mocha).
 
 And with **npm** you get the following packages:
+- **Traceur** - A future JS to modern JS compiler.
 - **Gulp** - Ultra-fast JavaScript task runner.
 - **Require.js** - Used as an optimization tool that lets you to compile a single, minified JavaScript file.
 - **Karma** - Awesome JavaScript test runner.
@@ -39,7 +41,7 @@ And with **npm** you get the following packages:
 
 ### Usage
 
-This library is flexible enough to work as an inline **\<script\>** declaration, 
+This library is flexible enough to work as an inline **\<script\>** declaration,
 **Require.js** module, or in this case as a **Node.js** module:
 ![alt tex](https://lh4.googleusercontent.com/-fehV2cIkf0Y/UoB4-p2sJ-I/AAAAAAAADgA/HX_vKo0ZFpw/w1360-h954-no/Screenshot+2013-11-11+01.16.41.png)
 
@@ -63,7 +65,7 @@ Only 2 out of 3 specs in the **test/spec** folder are written for the Jasmine te
 For your project pick either **Jasmine** or **Mocha + Chai**, whichever one you prefer the most. Both testing frameworks
 are excellent.
 
-The other file, `capitalize.js` is written for the Mocha testing framework, using Chai's *should* assertions. 
+The other file, `capitalize.js` is written for the Mocha testing framework, using Chai's *should* assertions.
 Run the *SpecRunnerMocha.html* and you should see the following page:
 ![alt text](https://lh6.googleusercontent.com/-asAAIpVt_eI/UoB47vwV8ZI/AAAAAAAADgA/NT2Nu1bf1DU/w1238-h984-no/Screenshot+2013-11-11+01.15.55.png)
 
@@ -74,11 +76,11 @@ npm test
 
 Or if you have installed **Karma** globally via npm, first run `karma start`, then `karma run`. It will perform
 a single test run using **Jasmine** testing framework via **PhantomJS** headless browser. Both testing framework
-and browser are configurable in **karma.conf.js**. 
+and browser are configurable in **karma.conf.js**.
 
 I have set `autoWatch: false` by default.
-So, if you use something like *JetBrains WebStorm 7* for development, then you should keep `autoWatch` turned off. 
-Here is the step-by-step guide: 
+So, if you use something like *JetBrains WebStorm 7* for development, then you should keep `autoWatch` turned off.
+Here is the step-by-step guide:
 [Running JavaScript tests with Karma in WebStorm 7](http://blog.jetbrains.com/webstorm/2013/10/running-javascript-tests-with-karma-in-webstorm-7/)
 
 
@@ -114,6 +116,7 @@ get to it as soon as I can.
 The MIT License (MIT)
 
 Copyright (c) 2014 Sahat Yalkabov
+Copyright (c) 2014 Eric McDaniel
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
